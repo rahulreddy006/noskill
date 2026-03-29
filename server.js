@@ -17,7 +17,6 @@ app.get("/", (req, res) => {
   res.json({ status: "OK", message: "Skill Analyzer API is running" });
 });
 
-
 app.use((err, req, res, next) => {
   console.error("Unhandled error:", err.message);
   res.status(500).json({ error: "Internal server error" });
